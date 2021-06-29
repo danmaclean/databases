@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Topic 4 Genomics Database and Genome Assembly | Genome, transcriptom and structure databases</title>
+  <meta name="description" content="Topic 4 Genomics Database and Genome Assembly | Genome, transcriptom and structure databases" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Topic 4 Genomics Database and Genome Assembly | Genome, transcriptom and structure databases" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Topic 4 Genomics Database and Genome Assembly | Genome, transcriptom and structure databases" />
+  
+  
+  
+
+<meta name="author" content="Dan MacLean" />
+
+
+<meta name="date" content="2021-06-29" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="primary-and-secondary-databases.html"/>
+<link rel="next" href="transcriptomics-databases-and-transcript-abundance.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Literate Computing</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Setting up</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#prerequisites"><i class="fa fa-check"></i><b>1.1</b> Prerequisites</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#knowledge-prerequisites"><i class="fa fa-check"></i><b>1.1.1</b> Knowledge prerequisites</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#software-prerequisites"><i class="fa fa-check"></i><b>1.1.2</b> Software prerequisites</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="motivation.html"><a href="motivation.html"><i class="fa fa-check"></i><b>2</b> Motivation</a><ul>
+<li class="chapter" data-level="2.1" data-path="motivation.html"><a href="motivation.html#three-weeks-of-computational-analysis-can-save-you-an-hour-of-database-searches"><i class="fa fa-check"></i><b>2.1</b> Three weeks of computational analysis can save you an hour of database searches</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html"><i class="fa fa-check"></i><b>3</b> Primary and Secondary Databases</a><ul>
+<li class="chapter" data-level="3.1" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#about-this-chapter"><i class="fa fa-check"></i><b>3.1</b> About this chapter</a></li>
+<li class="chapter" data-level="3.2" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#primary-databases"><i class="fa fa-check"></i><b>3.2</b> Primary databases</a></li>
+<li class="chapter" data-level="3.3" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#examples-of-primary-databases"><i class="fa fa-check"></i><b>3.3</b> Examples of primary databases</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#ena"><i class="fa fa-check"></i><b>3.3.1</b> ENA</a></li>
+<li class="chapter" data-level="3.3.2" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#genbank"><i class="fa fa-check"></i><b>3.3.2</b> GenBank</a></li>
+<li class="chapter" data-level="3.3.3" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#geo"><i class="fa fa-check"></i><b>3.3.3</b> GEO</a></li>
+<li class="chapter" data-level="3.3.4" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#biostudies"><i class="fa fa-check"></i><b>3.3.4</b> BioStudies</a></li>
+<li class="chapter" data-level="3.3.5" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#protein-data-bank"><i class="fa fa-check"></i><b>3.3.5</b> Protein Data Bank</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#secondary-databases"><i class="fa fa-check"></i><b>3.4</b> Secondary databases</a></li>
+<li class="chapter" data-level="3.5" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#examples-of-secondary-databases"><i class="fa fa-check"></i><b>3.5</b> Examples of secondary databases</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#ensembl"><i class="fa fa-check"></i><b>3.5.1</b> Ensembl</a></li>
+<li class="chapter" data-level="3.5.2" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#uniprotkb"><i class="fa fa-check"></i><b>3.5.2</b> UniProtKB</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#metadata"><i class="fa fa-check"></i><b>3.6</b> Metadata</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#minimum-information-standards"><i class="fa fa-check"></i><b>3.6.1</b> Minimum Information Standards</a></li>
+<li class="chapter" data-level="3.6.2" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#controlled-vocabularies"><i class="fa fa-check"></i><b>3.6.2</b> Controlled Vocabularies</a></li>
+<li class="chapter" data-level="3.6.3" data-path="primary-and-secondary-databases.html"><a href="primary-and-secondary-databases.html#conclusion"><i class="fa fa-check"></i><b>3.6.3</b> Conclusion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="genomics-database-and-genome-assembly.html"><a href="genomics-database-and-genome-assembly.html"><i class="fa fa-check"></i><b>4</b> Genomics Database and Genome Assembly</a><ul>
+<li class="chapter" data-level="4.1" data-path="genomics-database-and-genome-assembly.html"><a href="genomics-database-and-genome-assembly.html#about-this-chapter-1"><i class="fa fa-check"></i><b>4.1</b> About this chapter</a></li>
+<li class="chapter" data-level="4.2" data-path="genomics-database-and-genome-assembly.html"><a href="genomics-database-and-genome-assembly.html#interactive-tutorial"><i class="fa fa-check"></i><b>4.2</b> Interactive tutorial</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="transcriptomics-databases-and-transcript-abundance.html"><a href="transcriptomics-databases-and-transcript-abundance.html"><i class="fa fa-check"></i><b>5</b> Transcriptomics Databases and Transcript Abundance</a><ul>
+<li class="chapter" data-level="5.1" data-path="transcriptomics-databases-and-transcript-abundance.html"><a href="transcriptomics-databases-and-transcript-abundance.html#about-this-chapter-2"><i class="fa fa-check"></i><b>5.1</b> About this chapter</a></li>
+<li class="chapter" data-level="5.2" data-path="transcriptomics-databases-and-transcript-abundance.html"><a href="transcriptomics-databases-and-transcript-abundance.html#interactive-tutorial-1"><i class="fa fa-check"></i><b>5.2</b> Interactive tutorial</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Genome, transcriptom and structure databases</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="genomics-database-and-genome-assembly" class="section level1">
+<h1><span class="header-section-number">Topic 4</span> Genomics Database and Genome Assembly</h1>
+<div id="about-this-chapter-1" class="section level2">
+<h2><span class="header-section-number">4.1</span> About this chapter</h2>
+<ol style="list-style-type: decimal">
+<li>Questions
+<ul>
+<li>How can I use the ENA and NCBI to download sequence reads?</li>
+<li>What is the overall pipeline for assembling genomic DNA reads?</li>
+<li>How can I annotate an assembled prokaryotic genome?</li>
+</ul></li>
+<li>Objectives
+<ul>
+<li>Download some reads identified in ENA using efficient tools</li>
+<li>Run the tools needed to build a first draft genome assembly</li>
+</ul></li>
+</ol>
+</div>
+<div id="interactive-tutorial" class="section level2">
+<h2><span class="header-section-number">4.2</span> Interactive tutorial</h2>
+<p>The work in this course is provided as a combination of interactive tutorial and command-line tasks for you to run on your own machine. All the materials you need are referenced in the interactive tutorial.</p>
+
+<div class="task">
+<pre><code>* Run the interactive tutorial here ... URL TO FOLLOW ... </code></pre>
+</div>
+
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="primary-and-secondary-databases.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="transcriptomics-databases-and-transcript-abundance.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-genomics-database-use.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

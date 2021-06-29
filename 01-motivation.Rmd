@@ -1,0 +1,9 @@
+# Motivation
+
+## Three weeks of computational analysis can save you an hour of database searches
+
+All scientists know well the value of the library and how getting up to speed with the literature and current knowledge will prevent you from wasting time in the lab testing (or rather re-testing) ideas that have already been tested. An analogous rule in bioinformatics is that databases contain data and results that have already been performed such that knowing about them and how to access them can save you great deal of effort. Knowing that you can just download some results can help you progress and develop your own unique analyses much more quickly. The trick therefore is simply to know what databases exist, what is in them and how to extract what you need from them. 
+
+In this short course we'll look at primary and secondary genomics and transcriptomic databases as well as looking at tools that can make downloading from them very straightforward. We'll also look at some databases and tools for examining protein structures.
+
+

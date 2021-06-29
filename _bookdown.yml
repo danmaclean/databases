@@ -1,0 +1,8 @@
+book_filename: "literate_computing"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Topic "
+output_dir: "docs"
+clean: ["docs", "literate_computing.md"]
+rmd_files: ["index.Rmd", "01-motivation.Rmd", "02-primary-secondary.Rmd","03-genomics-database-use.Rmd","04-transcriptomics-database-use.Rmd","05-structural-database-use.Rmd"]
