@@ -1,5 +1,5 @@
 --- 
-title: "Genome, transcriptom and structure databases"
+title: "Genome, transcriptome and structure databases"
 author: "Dan MacLean"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
