@@ -27,3 +27,6 @@ interactive-tutorial
 transcriptomics-databases-and-transcript-abundance
 about-this-chapter-2
 interactive-tutorial-1
+structural-databases
+about-this-chapter-3
+interactive-tutorial-2
