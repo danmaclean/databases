@@ -16,6 +16,7 @@ The work in this course is provided as a combination of interactive tutorial and
 
 ```{block2, type = "task"}
 
-    * Run the interactive tutorial here ... URL TO FOLLOW ... 
+  * Run the interactive tutorial here <a href="http://v1068.nbi.ac.uk/datasci/dbs">"http://v1068.nbi.ac.uk/datasci/transcriptome_dbs"</a>
 
+(Note that this will only work on the NBI site)
 ```

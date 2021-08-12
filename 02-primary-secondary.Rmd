@@ -94,6 +94,8 @@ To maintain a consistent set of terms for describing biological concepts and obj
 
 ```{block2, type="roundup"}
 
-    * Databases are important stores of data for the scientific record and for enabling new analyses. The metadata used to describe the data in databases is of paramount importance and is what makes the data useful.
+    * Databases are important stores of data for the scientific record
+    * Databases enable new analyses. 
+    * The metadata used to describe the data in databases is what makes the data useful.
 
 ```

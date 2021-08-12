@@ -27,3 +27,11 @@ The materials in this book assume that you already know how to make use of comma
 
 You need to install the following stuff for this book: 
 
+  * [SRA Toolkit](https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit)
+  * [SPAdes](https://github.com/ablab/spades)
+  * [prokka](https://github.com/tseemann/prokka)
+  * [busco](https://busco.ezlab.org/busco_userguide.html)
+  * [kallisto](https://pachterlab.github.io/kallisto/download)
+
+
+
