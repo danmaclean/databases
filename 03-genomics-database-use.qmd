@@ -1,0 +1,22 @@
+# Genomics Database and Genome Assembly
+
+## About this chapter
+
+1.  Questions
+    -   How can I use the ENA and NCBI to download sequence reads?
+    -   What is the overall pipeline for assembling genomic DNA reads?
+    -   How can I annotate an assembled prokaryotic genome?
+2.  Objectives
+    -   Download some reads identified in ENA using efficient tools
+    -   Run the tools needed to build a first draft genome assembly
+
+## Interactive tutorial
+
+The work in this course is provided as a combination of interactive tutorial and command-line tasks for you to run on your own machine. All the materials you need are referenced in the interactive tutorial.
+
+::: {.callout-note}
+
+  * Run the interactive tutorial here <a href="http://v1068.nbi.ac.uk/datasci/genome_dbs">"http://v1068.nbi.ac.uk/datasci/genome_dbs"</a>
+
+(Note that this will only work on the NBI site)
+:::

@@ -1,0 +1,19 @@
+project:
+  type: book
+  output-dir: docs
+book:
+  title: "Introduction to Genomics, transcriptomics and structural databases"
+  author: "Dan MacLean"
+  date: "11/16/2022"
+  chapters:
+    - index.qmd
+    - 02-primary-secondary.qmd
+    - 03-genomics-database-use.qmd
+    - 04-transcriptomics-database-use.qmd
+    - 05-structural-database-use.qmd
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt

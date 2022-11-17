@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dan MacLean">
-<meta name="dcterms.date" content="2022-11-16">
 
-<title>Introduction to Genomics, transcriptomics and structural databases</title>
+<title>Introduction to Genomics, transcriptomics and structural databases - 4&nbsp; Structural Databases</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./02-primary-secondary.html" rel="next">
+<link href="./04-transcriptomics-database-use.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Introduction to Genomics, transcriptomics and structural databases</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Structural Databases</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -96,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -116,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05-structural-database-use.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Structural Databases</span></a>
+  <a href="./05-structural-database-use.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Structural Databases</span></a>
   </div>
 </li>
     </ul>
@@ -128,15 +126,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
-  <ul class="collapse">
-  <li><a href="#three-weeks-of-computational-analysis-can-save-you-an-hour-of-database-searches" id="toc-three-weeks-of-computational-analysis-can-save-you-an-hour-of-database-searches" class="nav-link" data-scroll-target="#three-weeks-of-computational-analysis-can-save-you-an-hour-of-database-searches">Three weeks of computational analysis can save you an hour of database searches</a></li>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a>
-  <ul class="collapse">
-  <li><a href="#knowledge-prerequisites" id="toc-knowledge-prerequisites" class="nav-link" data-scroll-target="#knowledge-prerequisites">Knowledge prerequisites</a></li>
-  <li><a href="#software-prerequisites" id="toc-software-prerequisites" class="nav-link" data-scroll-target="#software-prerequisites">Software prerequisites</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#about-this-chapter" id="toc-about-this-chapter" class="nav-link active" data-scroll-target="#about-this-chapter"><span class="toc-section-number">4.1</span>  About this chapter</a></li>
+  <li><a href="#interactive-tutorial" id="toc-interactive-tutorial" class="nav-link" data-scroll-target="#interactive-tutorial"><span class="toc-section-number">4.2</span>  Interactive tutorial</a></li>
   </ul>
 </nav>
     </div>
@@ -145,63 +136,58 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Introduction to Genomics, transcriptomics and structural databases</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Structural Databases</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dan MacLean </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 16, 2022</p>
-    </div>
-  </div>
     
   </div>
   
 
 </header>
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>The primary purpose of this course is to introduce you to databases that contain genome sequence data, transcriptome data and sequence structural data, and some of the tools that you can use to interact with them. Most of the material in this course will be web-based but some work will be via command lines.</p>
-<section id="three-weeks-of-computational-analysis-can-save-you-an-hour-of-database-searches" class="level2">
-<h2 class="anchored" data-anchor-id="three-weeks-of-computational-analysis-can-save-you-an-hour-of-database-searches">Three weeks of computational analysis can save you an hour of database searches</h2>
-<p>All scientists know well the value of the library and how getting up to speed with the literature and current knowledge will prevent you from wasting time in the lab testing (or rather re-testing) ideas that have already been tested. An analogous rule in bioinformatics is that databases contain data and results that have already been performed such that knowing about them and how to access them can save you great deal of effort. Knowing that you can just download some results can help you progress and develop your own unique analyses much more quickly. The trick therefore is simply to know what databases exist, what is in them and how to extract what you need from them.</p>
-<p>In this short course we’ll look at primary and secondary genomics and transcriptomic databases as well as looking at tools that can make downloading from them very straightforward. We’ll also look at some databases and tools for examining protein structures.</p>
-</section>
-<section id="prerequisites" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
-<section id="knowledge-prerequisites" class="level3">
-<h3 class="anchored" data-anchor-id="knowledge-prerequisites">Knowledge prerequisites</h3>
-<p>The materials in this book assume that you already know how to make use of command line tools.</p>
-</section>
-<section id="software-prerequisites" class="level3">
-<h3 class="anchored" data-anchor-id="software-prerequisites">Software prerequisites</h3>
-<p>You have two options to run the software for this course, you can run it in the pre-built Colab Document which you can access by clicking this <a href="https://colab.research.google.com/drive/1LJffmZ4yuzEjvtWp6Sj5tSibyTKJb_b1?usp=sharing">Link to Google Colab</a></p>
-<p>You will need a Google account to use it. If you don’t yet have one, or don’t want to use your personal account for this perhaps you could sign up using your <code>@tsl.ac.uk</code> address.</p>
-<p>Alternatively, you can install the tools yourself on your local machine, which means you need to install the following stuff:</p>
+<section id="about-this-chapter" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="about-this-chapter"><span class="header-section-number">4.1</span> About this chapter</h2>
+<ol type="1">
+<li>Questions:</li>
+</ol>
 <ul>
-<li><a href="https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit">SRA Toolkit</a></li>
-<li><a href="https://github.com/ablab/spades">SPAdes</a></li>
-<li><a href="https://github.com/tseemann/prokka">prokka</a></li>
-<li><a href="https://busco.ezlab.org/busco_userguide.html">busco</a></li>
-<li><a href="https://pachterlab.github.io/kallisto/download">kallisto</a></li>
+<li>What is held in structural databases?</li>
+<li>How can I find the structure of my protein?</li>
+<li>Are there any solved structures like my protein?</li>
 </ul>
-<p>Most can be installed using <a href="http://www.ddocent.com//bioconda/">bioconda</a></p>
+<ol start="2" type="1">
+<li>Objectives:</li>
+</ol>
+<ul>
+<li>Understand what is held in a structural database</li>
+<li>Know how to get an approximate structure for a protein of interest</li>
+</ul>
+</section>
+<section id="interactive-tutorial" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="interactive-tutorial"><span class="header-section-number">4.2</span> Interactive tutorial</h2>
+<p>The work in this course is provided as a combination of interactive tutorial and command-line tasks for you to run on your own machine. All the materials you need are referenced in the interactive tutorial.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Run the interactive tutorial here <a href="http://v1068.nbi.ac.uk/datasci/structural_dbs">“http://v1068.nbi.ac.uk/datasci/structural_dbs”</a></li>
+</ul>
+</div>
+</div>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -305,11 +291,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./04-transcriptomics-database-use.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Transcriptomics Databases and Transcript Abundance</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./02-primary-secondary.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Primary and Secondary Databases</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

@@ -1,0 +1,24 @@
+# Structural Databases
+
+## About this chapter
+
+1.  Questions:
+
+-   What is held in structural databases?
+-   How can I find the structure of my protein?
+-   Are there any solved structures like my protein?
+
+2.  Objectives:
+
+-   Understand what is held in a structural database
+-   Know how to get an approximate structure for a protein of interest
+
+## Interactive tutorial
+
+The work in this course is provided as a combination of interactive tutorial and command-line tasks for you to run on your own machine. All the materials you need are referenced in the interactive tutorial.
+
+::: {.callout-note}
+
+  * Run the interactive tutorial here <a href="http://v1068.nbi.ac.uk/datasci/structural_dbs">"http://v1068.nbi.ac.uk/datasci/structural_dbs"</a>
+
+:::

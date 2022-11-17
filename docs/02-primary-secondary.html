@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Introduction to Genomics, transcriptomics and structural databases - 1&nbsp; Primary and Secondary Databases</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./03-genomics-database-use.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Primary and Secondary Databases</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Introduction to Genomics, transcriptomics and structural databases</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-primary-secondary.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Primary and Secondary Databases</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-genomics-database-use.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Genomics Database and Genome Assembly</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-transcriptomics-database-use.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Transcriptomics Databases and Transcript Abundance</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-structural-database-use.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Structural Databases</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#about-this-chapter" id="toc-about-this-chapter" class="nav-link active" data-scroll-target="#about-this-chapter"><span class="toc-section-number">1.1</span>  About this chapter</a></li>
+  <li><a href="#primary-databases" id="toc-primary-databases" class="nav-link" data-scroll-target="#primary-databases"><span class="toc-section-number">1.2</span>  Primary databases</a></li>
+  <li><a href="#examples-of-primary-databases" id="toc-examples-of-primary-databases" class="nav-link" data-scroll-target="#examples-of-primary-databases"><span class="toc-section-number">1.3</span>  Examples of primary databases</a>
+  <ul class="collapse">
+  <li><a href="#ena" id="toc-ena" class="nav-link" data-scroll-target="#ena"><span class="toc-section-number">1.3.1</span>  ENA</a></li>
+  <li><a href="#genbank" id="toc-genbank" class="nav-link" data-scroll-target="#genbank"><span class="toc-section-number">1.3.2</span>  GenBank</a></li>
+  <li><a href="#geo" id="toc-geo" class="nav-link" data-scroll-target="#geo"><span class="toc-section-number">1.3.3</span>  GEO</a></li>
+  <li><a href="#biostudies" id="toc-biostudies" class="nav-link" data-scroll-target="#biostudies"><span class="toc-section-number">1.3.4</span>  BioStudies</a></li>
+  <li><a href="#protein-data-bank" id="toc-protein-data-bank" class="nav-link" data-scroll-target="#protein-data-bank"><span class="toc-section-number">1.3.5</span>  Protein Data Bank</a></li>
+  </ul></li>
+  <li><a href="#secondary-databases" id="toc-secondary-databases" class="nav-link" data-scroll-target="#secondary-databases"><span class="toc-section-number">1.4</span>  Secondary databases</a></li>
+  <li><a href="#examples-of-secondary-databases" id="toc-examples-of-secondary-databases" class="nav-link" data-scroll-target="#examples-of-secondary-databases"><span class="toc-section-number">1.5</span>  Examples of secondary databases</a>
+  <ul class="collapse">
+  <li><a href="#ensembl" id="toc-ensembl" class="nav-link" data-scroll-target="#ensembl"><span class="toc-section-number">1.5.1</span>  Ensembl</a></li>
+  <li><a href="#uniprotkb" id="toc-uniprotkb" class="nav-link" data-scroll-target="#uniprotkb"><span class="toc-section-number">1.5.2</span>  UniProtKB</a></li>
+  </ul></li>
+  <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata"><span class="toc-section-number">1.6</span>  Metadata</a>
+  <ul class="collapse">
+  <li><a href="#minimum-information-standards" id="toc-minimum-information-standards" class="nav-link" data-scroll-target="#minimum-information-standards"><span class="toc-section-number">1.6.1</span>  Minimum Information Standards</a></li>
+  <li><a href="#controlled-vocabularies" id="toc-controlled-vocabularies" class="nav-link" data-scroll-target="#controlled-vocabularies"><span class="toc-section-number">1.6.2</span>  Controlled Vocabularies</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="toc-section-number">1.6.3</span>  Conclusion</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Primary and Secondary Databases</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="about-this-chapter" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="about-this-chapter"><span class="header-section-number">1.1</span> About this chapter</h2>
+<ol type="1">
+<li>Questions:</li>
+</ol>
+<ul>
+<li>What is the difference between a primary and secondary database?</li>
+<li>What are some examples of primary and secondary databases?</li>
+<li>How can I interact with them to find what I need?</li>
+<li>What is metadata?</li>
+</ul>
+<ol start="2" type="1">
+<li>Objectives:</li>
+</ol>
+<ul>
+<li>Understand the role of a primary and secondary database</li>
+<li>Know where to access and how to find training resources provided by the databases</li>
+<li>Understand the importance of clear structured metadata</li>
+</ul>
+<ol start="3" type="1">
+<li>Keypoints:</li>
+</ol>
+<ul>
+<li>Primary databases are repositories of experimental data</li>
+<li>Secondary databases are repositories of results based on the primary data</li>
+<li>Metadata is what makes data findable and useable</li>
+</ul>
+</section>
+<section id="primary-databases" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="primary-databases"><span class="header-section-number">1.2</span> Primary databases</h2>
+<p>In many fields, databases can be categorized as either primary or secondary. The main difference is actually quite simple, <em>Primary</em> databases hold data that come from experiments or direct data gathering exercises and their contents are fixed. A primary database is often called an archive or a database of scientific record.</p>
+</section>
+<section id="examples-of-primary-databases" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="examples-of-primary-databases"><span class="header-section-number">1.3</span> Examples of primary databases</h2>
+<section id="ena" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="ena"><span class="header-section-number">1.3.1</span> ENA</h3>
+<p><a href="https://www.ebi.ac.uk/ena/browser/home">ENA - https://www.ebi.ac.uk/ena/browser/home</a></p>
+<p>The European Nucleotide Archive (ENA) is a comprehensive record of the world’s nucleotide sequencing information, covering raw sequencing data and sequence assemblies. Access to it is provided through a genome browser, search forms and tools, and an API - an interface that allows you to write programs that extract data. Like many databases, user training is a very important part of the mission of the database, so they provide a very comprehensive manual and how to’s at <a href="https://ena-docs.readthedocs.io/en/latest/" class="uri">https://ena-docs.readthedocs.io/en/latest/</a></p>
+</section>
+<section id="genbank" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="genbank"><span class="header-section-number">1.3.2</span> GenBank</h3>
+<p><a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank - https://www.ncbi.nlm.nih.gov/genbank</a></p>
+<p>GenBank is another distinct genetic sequence database with annotated sequences and it aims to hold <em>all</em> publicly available DNA sequences. Access to it is provided by the Entrez system which can find identifiers (ID’s) and BLAST which can search sequence similarity. There are also FTP (bulk download) and programatic acess via the NCBI e-utilities system. The provided training materials for GenBank are very dense, and take some reading <a href="https://www.ncbi.nlm.nih.gov/guide/training-tutorials/" class="uri">https://www.ncbi.nlm.nih.gov/guide/training-tutorials/</a>. The quick start guides are often a better place to start <a href="https://www.ncbi.nlm.nih.gov/nuccore/" class="uri">https://www.ncbi.nlm.nih.gov/nuccore/</a></p>
+</section>
+<section id="geo" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="geo"><span class="header-section-number">1.3.3</span> GEO</h3>
+<p><a href="https://www.ncbi.nlm.nih.gov/geo/">GEO - https://www.ncbi.nlm.nih.gov/geo/</a></p>
+<p>The Gene Expression Omnibus (GEO) is a functional genomics repository of microarray and RNAseq data that accepts raw microarray, sequence and curated gene expression profiles. The normal web, FTP and programmatic access routes are provided and help is provided best through the FAQ <a href="https://www.ncbi.nlm.nih.gov/geo/info/faq.html" class="uri">https://www.ncbi.nlm.nih.gov/geo/info/faq.html</a>.</p>
+</section>
+<section id="biostudies" class="level3" data-number="1.3.4">
+<h3 data-number="1.3.4" class="anchored" data-anchor-id="biostudies"><span class="header-section-number">1.3.4</span> BioStudies</h3>
+<p><a href="https://www.ebi.ac.uk/biostudies/about">BioStudies - https://www.ebi.ac.uk/biostudies/about</a></p>
+<p>BioStudies is a relatively new database that consolidates some other databases. BioStudies database holds descriptions of biological studies and links to data from these studies in other databases. Here you can find transcriptome data (from ArrayExpress), literature data (from PubMedCentral), image data (from BioImages) and more. The help describes searching <a href="https://www.ebi.ac.uk/biostudies/help" class="uri">https://www.ebi.ac.uk/biostudies/help</a> and again this database provides a web search interface, FTP and Aspera for bulk download and an API for programmatic access.</p>
+</section>
+<section id="protein-data-bank" class="level3" data-number="1.3.5">
+<h3 data-number="1.3.5" class="anchored" data-anchor-id="protein-data-bank"><span class="header-section-number">1.3.5</span> Protein Data Bank</h3>
+<p><a href="https://www.ebi.ac.uk/pdbe/node/1">Protein Data Bank https://www.ebi.ac.uk/pdbe/node/1</a></p>
+<p>PDBe aims to provide a resource of high quality macromolecular structures with integration of function, taxonomy and sequence. The databank provides excellent tutorials at <a href="https://www.ebi.ac.uk/pdbe/training/tutorials" class="uri">https://www.ebi.ac.uk/pdbe/training/tutorials</a> in particular the course at (https://www.ebi.ac.uk/training-beta/online/courses/biomacromolecular-structures)[https://www.ebi.ac.uk/training-beta/online/courses/biomacromolecular-structures] and the YouTube channel <a href="https://www.youtube.com/user/ProteinDataBank" class="uri">https://www.youtube.com/user/ProteinDataBank</a></p>
+</section>
+</section>
+<section id="secondary-databases" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="secondary-databases"><span class="header-section-number">1.4</span> Secondary databases</h2>
+<p>Secondary databases contain the results of analyses, often using the contents of primary databases. They will typically use information and raw data from various sources to create a new resource of information. Often highly curated, they can employ combinations of tools and analyses to present a synthesis of lower data types. These are the sort of databases molecular biologists are most used to using and many provide derived information of varying degrees of confidence about objects within the primary sequences, things like genes in genomes.</p>
+</section>
+<section id="examples-of-secondary-databases" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="examples-of-secondary-databases"><span class="header-section-number">1.5</span> Examples of secondary databases</h2>
+<section id="ensembl" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="ensembl"><span class="header-section-number">1.5.1</span> Ensembl</h3>
+<p><a href="http://www.ensembl.org/index.html" class="uri">http://www.ensembl.org/index.html</a></p>
+<p>Ensembl is a genome browser based database that contains information on comparative genomics, sequence variation, transcriptional regulation alongside annotated genes. While <a href="ensembl.org">ensembl.org</a> is focussed on vertebrates, there are sister databases for fungi, plants and bacteria. The help files are large and have many video lessons <a href="http://www.ensembl.org/info/website/tutorials/index.html" class="uri">http://www.ensembl.org/info/website/tutorials/index.html</a>. The BioMart tool in particular is very useful for medium scale retrieval <a href="http://www.ensembl.org/Multi/Help/Movie?db=core;id=189">BioMart</a>. The APIs provided can make whole genome and comparitive genomics analysis very streamlined.</p>
+</section>
+<section id="uniprotkb" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="uniprotkb"><span class="header-section-number">1.5.2</span> UniProtKB</h3>
+<p><a href="https://www.uniprot.org/help/uniprotkb" class="uri">https://www.uniprot.org/help/uniprotkb</a></p>
+<p>UniProt Knowledgebase is a database of functional information on proteins with a focus on accurate and consistent annotations. The database is divided into two parts, one with manually-curated records with information from literature and curator analyses (Swiss-Prot), the other with computationally-analysed only records that are yet to be examined by a human (TrEMBL). A YouTube channel of introductory videos is provided <a href="https://www.youtube.com/channel/UCkCR5RJZCZZoVTQzTYY92aw" class="uri">https://www.youtube.com/channel/UCkCR5RJZCZZoVTQzTYY92aw</a> for high level information. A large selection of on-demand training is also available through EBI Training Portal, e.g <a href="https://www.ebi.ac.uk/training/events/guide-uniprot-students/" class="uri">https://www.ebi.ac.uk/training/events/guide-uniprot-students/</a></p>
+</section>
+</section>
+<section id="metadata" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="metadata"><span class="header-section-number">1.6</span> Metadata</h2>
+<p>Data, especially raw data is absolutely useless on its own. It always need some contextual information to allow us to make use of it. This contextual data is called <code>metadata</code> - data about the data. For example genome sequencing data would need information about the organism sequenced, the machine used to sequence, the tissue type and much more. Anything that would be useful needs to be stored along with the data. Without metadata it would not possible to find data and select the correct samples for a given analysis of it.</p>
+<p>In order for metadata to be useful we need to capture the same metadata for all data samples. This can mean not only standardising the questions we ask of, but also the words we allow to be used in answering the questions. This can seem a bit restrictive at first, but is actually essential. Consider two labs working on NLR proteins, one group is in the habit of calling them <code>NBS-LRR</code> proteins, the other <code>NLR</code>. These two terms would be completely different to a computer and anyone within the field not yet aware of all the jargon. Some searches and analyses and computer programs would completely fail to link these up.</p>
+<p>As a result there are a wide range of accepted international standards on the metadata and this is why databases require users to annotate their data according to these standard. The standards themselves are constantly developing as new technologies and tools emerge, agreeing on data standards is an important and valuable job within research.</p>
+<section id="minimum-information-standards" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="minimum-information-standards"><span class="header-section-number">1.6.1</span> Minimum Information Standards</h3>
+<p>Many data types have a ‘minimum information standard’, a set of guidelines for reporting data on them. These ensure that the data of a certain type are all reported on in the same consistent way. Microarrays (MIAME), RNASeq (MINSEQE), and proteomics have data standards specific to them. More are listed at <a href="https://fairsharing.org/collection/MIBBI">FAIRSHARE</a>.</p>
+</section>
+<section id="controlled-vocabularies" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2" class="anchored" data-anchor-id="controlled-vocabularies"><span class="header-section-number">1.6.2</span> Controlled Vocabularies</h3>
+<p>To maintain a consistent set of terms for describing biological concepts and objects, we use controlled vocabularies, taxonomies and ontologies, among others. Controlled vocabularies restrict the words a human may use to describe something, a list of countries on a website would be an example of this. There are other ways to structure the controlled vocabulary. Taxonomies are ways of classifying things, often hierarchically from a more generic to a more specific group. This structure can add flexibility over the simple list, the biological taxonomy is an example of this. Ontologies represent the background knowledge of a domain, the objects are represented as terms and links between them are created to represent the relationships, such that we can analyse the ontology. The typical example is the Gene Ontology, which you can learn more about here <a href="https://www.ebi.ac.uk/training/online/course/goa-and-quickgo-quick-tour" class="uri">https://www.ebi.ac.uk/training/online/course/goa-and-quickgo-quick-tour</a></p>
+</section>
+<section id="conclusion" class="level3" data-number="1.6.3">
+<h3 data-number="1.6.3" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.6.3</span> Conclusion</h3>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<pre><code>* Databases are important stores of data for the scientific record
+* Databases enable new analyses. 
+* The metadata used to describe the data in databases is what makes the data useful.</code></pre>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./03-genomics-database-use.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Genomics Database and Genome Assembly</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
