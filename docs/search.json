@@ -74,7 +74,7 @@
     "href": "03-genomics-database-use.html#interactive-tutorial",
     "title": "2  Genomics Database and Genome Assembly",
     "section": "2.2 Interactive tutorial",
-    "text": "2.2 Interactive tutorial\nThe work in this course is provided as a combination of interactive tutorial and command-line tasks for you to run on your own machine. All the materials you need are referenced in the interactive tutorial.\n\n\n\n\n\n\nNote\n\n\n\n\nRun the interactive tutorial here <a href=“https://tsl-bioinformatics.shinyapps.io/genome_dbs/”\n\nIf you want to use the pre-prepared Colab instance, you can find that here: <a href=“https://colab.research.google.com/drive/1LJffmZ4yuzEjvtWp6Sj5tSibyTKJb_b1?usp=sharing”"
+    "text": "2.2 Interactive tutorial\nThe work in this course is provided as a combination of interactive tutorial and command-line tasks for you to run on your own machine. All the materials you need are referenced in the interactive tutorial.\n\n\n\n\n\n\nNote\n\n\n\n\nRun the interactive tutorial here tsl-bioinformatics.shinyapps.io/genome_dbs/\n\nIf you want to use the pre-prepared Colab instance, you can find that here: colab.research.google.com"
   },
   {
     "objectID": "04-transcriptomics-database-use.html#about-this-chapter",
@@ -88,7 +88,7 @@
     "href": "04-transcriptomics-database-use.html#interactive-tutorial",
     "title": "3  Transcriptomics Databases and Transcript Abundance",
     "section": "3.2 Interactive tutorial",
-    "text": "3.2 Interactive tutorial\nThe work in this course is provided as a combination of interactive tutorial and command-line tasks for you to run on your own machine. All the materials you need are referenced in the interactive tutorial.\n\n\n\n\n\n\nNote\n\n\n\n\nRun the interactive tutorial here <a href=“https://tsl-bioinformatics.shinyapps.io/transcriptome_dbs/”\n\nIf you want to use the pre-prepared Colab instance, you can find that here: <a href=“https://colab.research.google.com/drive/1LJffmZ4yuzEjvtWp6Sj5tSibyTKJb_b1?usp=sharing”"
+    "text": "3.2 Interactive tutorial\nThe work in this course is provided as a combination of interactive tutorial and command-line tasks for you to run on your own machine. All the materials you need are referenced in the interactive tutorial.\n\n\n\n\n\n\nNote\n\n\n\n\nRun the interactive tutorial here tsl-bioinformatics.shinyapps.io/transcriptome_dbs\n\nIf you want to use the pre-prepared Colab instance, you can find that here: colab.research.google.com"
   },
   {
     "objectID": "05-structural-database-use.html#about-this-chapter",
@@ -102,6 +102,6 @@
     "href": "05-structural-database-use.html#interactive-tutorial",
     "title": "4  Structural Databases",
     "section": "4.2 Interactive tutorial",
-    "text": "4.2 Interactive tutorial\nThe work in this course is provided as a combination of interactive tutorial and command-line tasks for you to run on your own machine. All the materials you need are referenced in the interactive tutorial.\n\n\n\n\n\n\nNote\n\n\n\n\nRun the interactive tutorial here <a href=“https://tsl-bioinformatics.shinyapps.io/structural_dbs/”"
+    "text": "4.2 Interactive tutorial\nThe work in this course is provided as a combination of interactive tutorial and command-line tasks for you to run on your own machine. All the materials you need are referenced in the interactive tutorial.\n\n\n\n\n\n\nNote\n\n\n\n\nRun the interactive tutorial here tsl-bioinformatics.shinyapps.io/structural_dbs"
   }
 ]

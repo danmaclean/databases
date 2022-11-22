@@ -19,6 +19,6 @@ The work in this course is provided as a combination of interactive tutorial and
 
 ::: {.callout-note}
 
-  * Run the interactive tutorial here <a href="https://tsl-bioinformatics.shinyapps.io/structural_dbs/"</a>
+  * Run the interactive tutorial here <a href="https://tsl-bioinformatics.shinyapps.io/structural_dbs/">tsl-bioinformatics.shinyapps.io/structural_dbs</a>
 
 :::

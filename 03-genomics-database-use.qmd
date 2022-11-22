@@ -16,8 +16,8 @@ The work in this course is provided as a combination of interactive tutorial and
 
 ::: {.callout-note}
 
-  * Run the interactive tutorial here <a href="https://tsl-bioinformatics.shinyapps.io/genome_dbs/"</a>
+  * Run the interactive tutorial here <a href="https://tsl-bioinformatics.shinyapps.io/genome_dbs/">tsl-bioinformatics.shinyapps.io/genome_dbs/</a>
 
 If you want to use the pre-prepared Colab instance, you can find that here:
-<a href="https://colab.research.google.com/drive/1LJffmZ4yuzEjvtWp6Sj5tSibyTKJb_b1?usp=sharing"</a>
+<a href="https://colab.research.google.com/drive/1LJffmZ4yuzEjvtWp6Sj5tSibyTKJb_b1?usp=sharing">colab.research.google.com</a>
 :::
