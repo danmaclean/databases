@@ -16,7 +16,8 @@ The work in this course is provided as a combination of interactive tutorial and
 
 ::: {.callout-note}
 
-  * Run the interactive tutorial here <a href="http://v1068.nbi.ac.uk/datasci/transcriptome_dbs">"http://v1068.nbi.ac.uk/datasci/transcriptome_dbs"</a>
+  * Run the interactive tutorial here <a href="https://tsl-bioinformatics.shinyapps.io/transcriptome_dbs/"</a>
 
-(Note that this will only work on the NBI site)
+If you want to use the pre-prepared Colab instance, you can find that here:
+<a href="https://colab.research.google.com/drive/1LJffmZ4yuzEjvtWp6Sj5tSibyTKJb_b1?usp=sharing"</a>
 :::
